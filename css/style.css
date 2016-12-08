@@ -1,16 +1,26 @@
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, img, ins, kbd, q, s, samp, small, strike, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
+html {
+    line-height: 1.4;
 }
 
 body {
     line-height: 1;
 }
+
+p {
+    font-family: Georgia,"Times New Roman",serif;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+header {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+
 
 ol, ul {
     list-style: none;
@@ -43,9 +53,24 @@ body {
 }
 
 #bigT {
-    display:inline-block
-    margin: 20px 20px 20px 20px;
-    border: solid 2px purple
+    border: solid 2px darkred;
+    background-size: cover;
+    float: left;
+    padding: 3%;
+    margin-right: .5rem;
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: white;
+    background-image: url(../images/tree-of-death.jpg);
+}
+
+#comparison {
+    float: right;
+    width: 60%;
+}
+
+#xerxes {
+    float: left;
 }
 
 #movieName {
