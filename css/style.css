@@ -1,58 +1,41 @@
 html {
-    line-height: 1.4;
-}
+    font-size: 2.5vh; }
 
 body {
-    line-height: 1;
-}
+    background: linear-gradient(darkred, black) no-repeat top;
+    background-size: cover;
+    min-height: 100%; }
 
-p {
-    font-family: Georgia,"Times New Roman",serif;
-    text-align: justify;
-    font-size: 1rem;
-}
+#review {
+    padding: 2.5%;
+    padding-top: 1%;
+    background: white;
+    border: solid 3px black;
+    margin: 5% 5% 5% 5%;
+    max-width: 100%; }
 
 header {
-    font-family: "Trebuchet MS", Arial, sans-serif;
-}
+    font-family: "Trebuchet MS",Arial,sans-serif; }
 
 h1 {
-    font-size: 2rem;
-}
+    font-size: 2rem; }
+h1 #subtitle {
+    color: red; }
 
+h2 {
+    font-size: 1.5rem; }
 
+#date {
+    font-size: .9rem;
+    font-weight: bold;
+    color: grey; }
 
-ol, ul {
-    list-style: none;
-}
+#main-article {
+    font-family: Georgia,"Times New Roman",serif;
+    text-align: justify;
+    font-size: 1rem; }
 
-blockquote, q {
-    quotes: none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-html {
-    background-image: linear-gradient(darkred, black);
-}
-
-body {
-    line-height: 1;
-    padding: 2.5%;
-    background: white;
-    margin: 5% 5% 5% 5%;
-    border: solid 3px black;
-}
-
-#bigT {
+#main-article :first-child::first-letter {
     border: solid 2px darkred;
     background-size: cover;
     float: left;
@@ -61,18 +44,28 @@ body {
     text-transform: uppercase;
     font-size: 4rem;
     color: white;
-    background-image: url(../images/tree-of-death.jpg);
-}
+    background-image: url(../images/tree-of-death.jpg); }
+
+#main-article :first-child::first-line {
+    font-variant: small-caps; }
+
+#footnote {
+    font-size: .75rem; }
 
 #comparison {
     float: right;
-    width: 60%;
-}
+    width: 60%; }
 
 #xerxes {
     float: left;
-}
+    width: 60%;
+    margin-right: .5rem; }
 
-#movieName {
-    color: red;
-}
+#cliff {
+    margin-top: 20px;
+    width: 100%;
+    border: solid 1px darkred; }
+
+@media print {
+    #review {
+        border: none; } }
